@@ -1,0 +1,16 @@
+[
+{
+  "modid": "noworldgen5you",
+  "name": "No World Gen 5 You",
+  "description": "Allows various structures to be disabled.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Michael Sebero"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
