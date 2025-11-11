@@ -1,10 +1,10 @@
-package net.michaelsebero.noworldgen5you;
+package net.darkhax.noworldgen5you;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.michaelsebero.noworldgen5you.world.gen.MapGenScatteredFeaturesEmpty;
+import net.darkhax.noworldgen5you.world.gen.MapGenScatteredFeaturesEmpty;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.terraingen.InitMapGenEvent;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent.Populate;

@@ -1,6 +1,6 @@
-package net.michaelsebero.noworldgen5you.world.gen;
+package net.darkhax.noworldgen5you.world.gen;
 
-import net.michaelsebero.noworldgen5you.WorldgenConfig;
+import net.darkhax.noworldgen5you.WorldgenConfig;
 import net.minecraft.init.Biomes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;

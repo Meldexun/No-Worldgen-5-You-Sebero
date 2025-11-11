@@ -1,4 +1,4 @@
-package net.michaelsebero.noworldgen5you.world.gen;
+package net.darkhax.noworldgen5you.world.gen;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkPrimer;

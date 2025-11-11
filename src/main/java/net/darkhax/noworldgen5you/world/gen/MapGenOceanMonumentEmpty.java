@@ -1,10 +1,10 @@
-package net.michaelsebero.noworldgen5you.world.gen;
+package net.darkhax.noworldgen5you.world.gen;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkPrimer;
-import net.minecraft.world.gen.structure.MapGenNetherBridge;
+import net.minecraft.world.gen.structure.StructureOceanMonument;
 
-public class MapGenFortressEmpty extends MapGenNetherBridge {
+public class MapGenOceanMonumentEmpty extends StructureOceanMonument {
 
     @Override
     public void generate (World worldIn, int x, int z, ChunkPrimer primer) {

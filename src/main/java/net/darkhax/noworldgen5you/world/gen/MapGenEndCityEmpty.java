@@ -1,12 +1,12 @@
-package net.michaelsebero.noworldgen5you.world.gen;
+package net.darkhax.noworldgen5you.world.gen;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.ChunkPrimer;
-import net.minecraft.world.gen.structure.WoodlandMansion;
+import net.minecraft.world.gen.structure.MapGenEndCity;
 
-public class MapGenWoodlandMansion extends WoodlandMansion {
+public class MapGenEndCityEmpty extends MapGenEndCity {
 
-    public MapGenWoodlandMansion () {
+    public MapGenEndCityEmpty () {
 
         super(null);
     }
