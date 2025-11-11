@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLFingerprintViolationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.Event.Result;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = "noworldgen5you", name = "No Worldgen 5 You", version = "@VERSION@", certificateFingerprint = "@FINGERPRINT@")
@@ -49,13 +50,19 @@ public class NoWorldgen5You {
         }
     }
 
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.LOWEST)
     public void onMapGen (InitMapGenEvent event) {
 
-        if (!WorldgenConfig.isStructureDisabled(event.getType().name().toLowerCase())) {
+        // Add logging to see what's happening
+        LOG.info("InitMapGenEvent fired - Type: {}, Original: {}", 
+            event.getType(), 
+            event.getOriginalGen().getClass().getSimpleName());
 
+        if (!WorldgenConfig.isStructureDisabled(event.getType().name().toLowerCase())) {
             return;
         }
+
+        LOG.info("Replacing {} generator", event.getType());
 
         switch (event.getType()) {
 
